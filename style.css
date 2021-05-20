@@ -1,0 +1,40 @@
+#sketchfab-iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 0
+}
+
+body {
+    font-family: "Exo 2";
+    font-size: 0.75rem;
+    font-weight: 400;
+    color: white;
+}
+
+.topnav {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+.topnav h2 {
+    padding-left: 1em;
+}
+
+.topnav a {
+    color: white;
+    padding: 1em;
+    text-decoration: none;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
