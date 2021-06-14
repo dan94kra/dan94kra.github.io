@@ -16,4 +16,4 @@ collections:
   static-files:
     collections_dir: assets/Daniel Krajnik Portfolio S.pdf
     output: true
-    permalink: /portfolio-s/:name
+    permalink: /portfolio-s.pdf
