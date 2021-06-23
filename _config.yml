@@ -4,3 +4,6 @@ description: >
   Full Stack Architectural Assistant. Making architecture cool.
 
 markdown: kramdown
+
+plugins:
+  - jekyll-redirect-from
