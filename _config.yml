@@ -1,19 +1,14 @@
-title: Daniel Krajnik com
+title: Daniel-Krajnik-com
 email: krajnik.dan@gmail.com
-description: > # this means to ignore newlines until "baseurl:"
-  Making architecture cool. Site for all things computational and architectural.
-baseurl: "" # the subpath of your site, e.g. /blog
+description: > 
+  Full Stack Architectural Assistant. Making architecture cool.
 
-url: "https://danielkrajnik.com" # the base hostname & protocol for your site
-
-twitter_username: DanielKrajnik
-github_username:  danielkrajnik
-
-# Build settings
 markdown: kramdown
+
+includes_dir: assets
 
 collections:
   static-files:
-    collections_dir: assets/Daniel Krajnik Portfolio S.pdf
+    collections_dir: assets/Daniel-Krajnik-Portfolio.pdf
     output: true
-    permalink: /portfolio-s.pdf
+    permalink: /omega/:name
