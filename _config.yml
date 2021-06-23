@@ -5,6 +5,9 @@ description: >
 
 markdown: kramdown
 
+include:
+ - _pages
+
 permalink: /:basename
 
 plugins:
