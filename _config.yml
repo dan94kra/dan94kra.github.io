@@ -5,5 +5,7 @@ description: >
 
 markdown: kramdown
 
+permalink: /:basename
+
 plugins:
   - jekyll-redirect-from
