@@ -2,10 +2,6 @@ body {
     margin: 0;
     width: 100vw;
     height: 100vh;
-    font-family: "Exo 2";
-    font-size: 0.75rem;
-    font-weight: 400;
-    color: rgb(255, 255, 255);
 }
 
 #container {
@@ -20,17 +16,23 @@ body {
     flex-wrap: wrap;
     overflow: hidden;
     position: absolute;
+    z-index: 1;
+
+    font-family: "Exo 2";
+    font-size: 0.75rem;
+    font-weight: 400;
 }
 
 .topnav h2 {
     padding-left: 1em;
     padding-right: 1.5em;
+    color: rgb(255, 255, 255);
 }
 
 .topnav a {
-    color: rgb(0, 0, 0);
     padding: 1em;
     text-decoration: none;
+    color: rgb(255, 255, 255);
 }
 
 .topnav a:hover {
