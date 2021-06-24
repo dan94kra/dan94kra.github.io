@@ -1,28 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>test</title>
-   <link rel="preconnect" href="https://fonts.gstatic.com">
-   <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@100&display=swap" rel="stylesheet">
-   <link rel="stylesheet" href="css/style.css">
-   <script src="js/three.min.js"></script>
-   <script src="js/nexus.js"></script>
-   <script src="js/nexus_three.js"></script>
-   <script src="js/trackball_three.js"></script>
+<title>Nexus threejs</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+<style> body { margin:0; width:100vw; height:100vh; } #container { width:100vw; height:100vh; } </style>
+<script src="js/three.min.js"></script>
+<script src="js/nexus.js"></script>
+<script src="js/nexus_three.js"></script>
+<script src="js/trackball_three.js"></script>
 </head>
+
 <body>
-   <div class="topnav">
-      <h2 id="main">A Full Stack Architectural Assistant</h2>
-      <a href="#projects">Projects</a>
-      <a href="#demos">Demos</a>
-      <a href="#contact">Contact</a>
-   </div>
-   <div id="container"></div>
-   <script src="js/script.js"></script>
+	<div id="container"></div>
 </body>
+
 <script>
 var camera = new THREE.PerspectiveCamera( 30, window.innerWidth / window.innerHeight, 0.1, 100 );
 camera.position.z = 4.0;
@@ -114,4 +106,5 @@ function animate() {
 
 animate();
 </script>
+
 </html>
