@@ -1,14 +1,6 @@
 title: Daniel-Krajnik-com
-email: krajnik.dan@gmail.com
-description: > 
-  Full Stack Architectural Assistant
 
 markdown: kramdown
-
-include:
- - _pages
-
-permalink: /:basename
 
 plugins:
   - jekyll-redirect-from
