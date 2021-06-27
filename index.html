@@ -20,6 +20,7 @@
       <a href="#demos">Demos</a>
       <a href="#contact">Contact</a>
    </div>
+   <p>Website in progrss</p>
    <div class="acknowledgements">
       <ul>
          <h2>Built with</h2>
@@ -82,14 +83,15 @@ function getURLParameter(name) {
 	return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.search) || [null, ''])[1].replace(/\+/g, '%20')) || null;
 }
 
-var model = getURLParameter('model') || "models/prototype.nxz";
+var model = getURLParameter('model') || "models/test-2.nxz";
 
 /* An appropriate material can be used as optional fifth arg for the NexusObject constructor */
-let material = false;
+// let material = false;
 /* Material customizations examples: */
-//let material = new THREE.PointsMaterial( {  size:3, color: 0x00ff00, transparent: false, opacity:0.25 } );
-//let material = new THREE.MeshLambertMaterial( { color: 0xff0000, vertexColors: THREE.VertexColors } );
-//let material = new THREE.MeshNormalMaterial({ flatShading: true });
+// let material = new THREE.PointsMaterial( {  size:3, color: 0x00ff00, transparent: false, opacity:0.25 } );
+let material = new THREE.MeshLambertMaterial( { color: 0xffffff} );
+// let material = new THREE.MeshNormalMaterial({ flatShading: true });
+material.side = THREE.DoubleSide;
 
 var nexus_obj = new NexusObject(model, onNexusLoad, function() { redraw = true; }, renderer, material);
 scene.add(nexus_obj);
