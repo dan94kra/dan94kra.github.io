@@ -12,6 +12,7 @@
    <script src="js/nexus.js"></script>
    <script src="js/nexus_three.js"></script>
    <script src="js/trackball_three.js"></script>
+   <script src="js/FirstPersonControls.js"></script>
 </head>
 <body>
    <div class="topnav">
@@ -32,8 +33,9 @@
    <div id="container"></div>
 </body>
 <script>
-var camera = new THREE.PerspectiveCamera( 30, window.innerWidth / window.innerHeight, 0.1, 100 );
-camera.position.z = 4.0;
+var camera = new THREE.PerspectiveCamera( 30, window.innerWidth / window.innerHeight, 0.1, 1000 );
+camera.position.z = 100;
+camera.position.y = 100;
 
 var controls = new THREE.TrackballControls( camera );
 controls.target.set( 0, 0, 0 );
@@ -69,13 +71,12 @@ var container = document.getElementById( 'container');
 container.appendChild( renderer.domElement );
 
 function onNexusLoad() {
-	var s   = 1/nexus_obj.geometry.boundingSphere.radius;
+	var s   = 1/nexus_obj.geometry.boundingSphere.radius * 100;
 	var target = new THREE.Vector3();
 	var p = nexus_obj.geometry.boundingBox.getCenter(target).negate();
 
 	nexus_obj.position.set(p.x*s, p.y*s, p.z*s);
 	nexus_obj.scale.set(s, s, s);
-//	nexus_obj.material = new THREE.PointsMaterial( {  size:3, color: 0x00ff00, transparent: false, opacity:0.25 } );
 	redraw = true;
 }
 
