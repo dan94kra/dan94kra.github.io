@@ -51,7 +51,7 @@ p{
 .acknowledgements {
     z-index: 10;
     position: absolute;
-    color: rgb(255, 255, 255);
+    color: rgb(44, 44, 44);
     bottom: 0;
     right: 1em;
 }
@@ -63,7 +63,8 @@ p{
 
 .acknowledgements a {
     font-size: smaller;
-    color: white;
+    color: rgb(109, 109, 109);
+    font-weight: 600;
     text-decoration: none;
 }
 
