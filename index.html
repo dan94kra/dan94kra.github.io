@@ -83,7 +83,7 @@ function getURLParameter(name) {
 	return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.search) || [null, ''])[1].replace(/\+/g, '%20')) || null;
 }
 
-var model = getURLParameter('model') || "models/test.nxz";
+var model = getURLParameter('model') || "models/gargo.nxz";
 
 /* An appropriate material can be used as optional fifth arg for the NexusObject constructor */
 // let material = false;
